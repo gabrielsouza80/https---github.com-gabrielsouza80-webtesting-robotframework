@@ -18,7 +18,7 @@ Caso de teste 01 - Acesso ao menu "Eletrônicos"
     Verificar se aparece a frase "Eletrônicos e Tecnologia"
     Verificar se aparece a categoria "Computadores e Informática"
 
-Caso de teste 02 - Pesquisa de um Produto
+# Caso de teste 02 - Pesquisa de um Produto
     [Documentation]    Esse teste verifica a busca de um produto
     [Tags]             busca_produtos  lista_busca
     Acessar a home page do site Amazon.com.br
