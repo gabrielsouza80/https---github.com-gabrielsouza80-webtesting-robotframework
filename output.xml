@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.6 on win32)" generated="2025-08-08T13:32:20.357979" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Testes" source="C:\Users\telve\OneDrive\Área de Trabalho\GABRIEL\cursoudemy\robotframework\webtesting\amazon_testes.robot">
+<test id="s1-t1" name="Caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="11">
+<kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-08T13:32:20.882603" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-08-08T13:32:21.019157" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\WINDOWS\chromedriver.exe might not be compatible with the detected chrome version (139.0.7258.67); currently, chromedriver 139.0.7258.66 is recommended for chrome 139.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-08-08T13:32:24.334593" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-08-08T13:32:24.334971" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6904752A2+57122]
+	(No symbol) [0x00007FF6903EEA92]
+	(No symbol) [0x00007FF6902BE3AB]
+	(No symbol) [0x00007FF6902E9FF5]
+	(No symbol) [0x00007FF6902E5237]
+	(No symbol) [0x00007FF6902E2FE1]
+	(No symbol) [0x00007FF69031EA4F]
+	(No symbol) [0x00007FF69031E5B0]
+	(No symbol) [0x00007FF690316DB3]
+	(No symbol) [0x00007FF6902ED2B1]
+	(No symbol) [0x00007FF6902EE494]
+	GetHandleVerifier [0x00007FF69071EF82+2849794]
+	GetHandleVerifier [0x00007FF690771D24+3189156]
+	GetHandleVerifier [0x00007FF69076ACAF+3160367]
+	GetHandleVerifier [0x00007FF690506D06+653702]
+	(No symbol) [0x00007FF6903FA208]
+	(No symbol) [0x00007FF6903F62C4]
+	(No symbol) [0x00007FF6903F63F6]
+	(No symbol) [0x00007FF6903E67A3]
+	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
+	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
+</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-08-08T13:32:20.882426" elapsed="3.458156">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6904752A2+57122]
+	(No symbol) [0x00007FF6903EEA92]
+	(No symbol) [0x00007FF6902BE3AB]
+	(No symbol) [0x00007FF6902E9FF5]
+	(No symbol) [0x00007FF6902E5237]
+	(No symbol) [0x00007FF6902E2FE1]
+	(No symbol) [0x00007FF69031EA4F]
+	(No symbol) [0x00007FF69031E5B0]
+	(No symbol) [0x00007FF690316DB3]
+	(No symbol) [0x00007FF6902ED2B1]
+	(No symbol) [0x00007FF6902EE494]
+	GetHandleVerifier [0x00007FF69071EF82+2849794]
+	GetHandleVerifier [0x00007FF690771D24+3189156]
+	GetHandleVerifier [0x00007FF69076ACAF+3160367]
+	GetHandleVerifier [0x00007FF690506D06+653702]
+	(No symbol) [0x00007FF6903FA208]
+	(No symbol) [0x00007FF6903F62C4]
+	(No symbol) [0x00007FF6903F63F6]
+	(No symbol) [0x00007FF6903E67A3]
+	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
+	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-08-08T13:32:24.340816" elapsed="0.000039"/>
+</kw>
+<kw name="options=add_experimental_option(&quot;detach&quot;, True)">
+<status status="NOT RUN" start="2025-08-08T13:32:24.341005" elapsed="0.000031"/>
+</kw>
+<status status="FAIL" start="2025-08-08T13:32:20.881782" elapsed="3.459394">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6904752A2+57122]
+	(No symbol) [0x00007FF6903EEA92]
+	(No symbol) [0x00007FF6902BE3AB]
+	(No symbol) [0x00007FF6902E9FF5]
+	(No symbol) [0x00007FF6902E5237]
+	(No symbol) [0x00007FF6902E2FE1]
+	(No symbol) [0x00007FF69031EA4F]
+	(No symbol) [0x00007FF69031E5B0]
+	(No symbol) [0x00007FF690316DB3]
+	(No symbol) [0x00007FF6902ED2B1]
+	(No symbol) [0x00007FF6902EE494]
+	GetHandleVerifier [0x00007FF69071EF82+2849794]
+	GetHandleVerifier [0x00007FF690771D24+3189156]
+	GetHandleVerifier [0x00007FF69076ACAF+3160367]
+	GetHandleVerifier [0x00007FF690506D06+653702]
+	(No symbol) [0x00007FF6903FA208]
+	(No symbol) [0x00007FF6903F62C4]
+	(No symbol) [0x00007FF6903F63F6]
+	(No symbol) [0x00007FF6903E67A3]
+	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
+	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
+</status>
+</kw>
+<kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-08T13:32:24.342236" elapsed="0.000125"/>
+</kw>
+<status status="PASS" start="2025-08-08T13:32:24.341968" elapsed="0.000465"/>
+</kw>
+<doc>esse teste verifica o menu eletronicos do site da amazon.com.br
+e verifica a categoria Computadores e Informatica</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" start="2025-08-08T13:32:20.880548" elapsed="3.462062">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6904752A2+57122]
+	(No symbol) [0x00007FF6903EEA92]
+	(No symbol) [0x00007FF6902BE3AB]
+	(No symbol) [0x00007FF6902E9FF5]
+	(No symbol) [0x00007FF6902E5237]
+	(No symbol) [0x00007FF6902E2FE1]
+	(No symbol) [0x00007FF69031EA4F]
+	(No symbol) [0x00007FF69031E5B0]
+	(No symbol) [0x00007FF690316DB3]
+	(No symbol) [0x00007FF6902ED2B1]
+	(No symbol) [0x00007FF6902EE494]
+	GetHandleVerifier [0x00007FF69071EF82+2849794]
+	GetHandleVerifier [0x00007FF690771D24+3189156]
+	GetHandleVerifier [0x00007FF69076ACAF+3160367]
+	GetHandleVerifier [0x00007FF690506D06+653702]
+	(No symbol) [0x00007FF6903FA208]
+	(No symbol) [0x00007FF6903F62C4]
+	(No symbol) [0x00007FF6903F63F6]
+	(No symbol) [0x00007FF6903E67A3]
+	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
+	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
+</status>
+</test>
+<test id="s1-t2" name="Caso de teste 02 - Pesquisa de um Produto" line="21">
+<kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-08T13:32:24.345453" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-08-08T13:32:24.464784" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\WINDOWS\chromedriver.exe might not be compatible with the detected chrome version (139.0.7258.67); currently, chromedriver 139.0.7258.66 is recommended for chrome 139.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-08-08T13:32:27.738807" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-08-08T13:32:27.739091" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6904752A2+57122]
+	(No symbol) [0x00007FF6903EEA92]
+	(No symbol) [0x00007FF6902BE3AB]
+	(No symbol) [0x00007FF6902E9FF5]
+	(No symbol) [0x00007FF6902E5237]
+	(No symbol) [0x00007FF6902E2FE1]
+	(No symbol) [0x00007FF69031EA4F]
+	(No symbol) [0x00007FF69031E5B0]
+	(No symbol) [0x00007FF690316DB3]
+	(No symbol) [0x00007FF6902ED2B1]
+	(No symbol) [0x00007FF6902EE494]
+	GetHandleVerifier [0x00007FF69071EF82+2849794]
+	GetHandleVerifier [0x00007FF690771D24+3189156]
+	GetHandleVerifier [0x00007FF69076ACAF+3160367]
+	GetHandleVerifier [0x00007FF690506D06+653702]
+	(No symbol) [0x00007FF6903FA208]
+	(No symbol) [0x00007FF6903F62C4]
+	(No symbol) [0x00007FF6903F63F6]
+	(No symbol) [0x00007FF6903E67A3]
+	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
+	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
+</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-08-08T13:32:24.345277" elapsed="3.397447">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6904752A2+57122]
+	(No symbol) [0x00007FF6903EEA92]
+	(No symbol) [0x00007FF6902BE3AB]
+	(No symbol) [0x00007FF6902E9FF5]
+	(No symbol) [0x00007FF6902E5237]
+	(No symbol) [0x00007FF6902E2FE1]
+	(No symbol) [0x00007FF69031EA4F]
+	(No symbol) [0x00007FF69031E5B0]
+	(No symbol) [0x00007FF690316DB3]
+	(No symbol) [0x00007FF6902ED2B1]
+	(No symbol) [0x00007FF6902EE494]
+	GetHandleVerifier [0x00007FF69071EF82+2849794]
+	GetHandleVerifier [0x00007FF690771D24+3189156]
+	GetHandleVerifier [0x00007FF69076ACAF+3160367]
+	GetHandleVerifier [0x00007FF690506D06+653702]
+	(No symbol) [0x00007FF6903FA208]
+	(No symbol) [0x00007FF6903F62C4]
+	(No symbol) [0x00007FF6903F63F6]
+	(No symbol) [0x00007FF6903E67A3]
+	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
+	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-08-08T13:32:27.742957" elapsed="0.000037"/>
+</kw>
+<kw name="options=add_experimental_option(&quot;detach&quot;, True)">
+<status status="NOT RUN" start="2025-08-08T13:32:27.743120" elapsed="0.000030"/>
+</kw>
+<status status="FAIL" start="2025-08-08T13:32:24.344986" elapsed="3.398284">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6904752A2+57122]
+	(No symbol) [0x00007FF6903EEA92]
+	(No symbol) [0x00007FF6902BE3AB]
+	(No symbol) [0x00007FF6902E9FF5]
+	(No symbol) [0x00007FF6902E5237]
+	(No symbol) [0x00007FF6902E2FE1]
+	(No symbol) [0x00007FF69031EA4F]
+	(No symbol) [0x00007FF69031E5B0]
+	(No symbol) [0x00007FF690316DB3]
+	(No symbol) [0x00007FF6902ED2B1]
+	(No symbol) [0x00007FF6902EE494]
+	GetHandleVerifier [0x00007FF69071EF82+2849794]
+	GetHandleVerifier [0x00007FF690771D24+3189156]
+	GetHandleVerifier [0x00007FF69076ACAF+3160367]
+	GetHandleVerifier [0x00007FF690506D06+653702]
+	(No symbol) [0x00007FF6903FA208]
+	(No symbol) [0x00007FF6903F62C4]
+	(No symbol) [0x00007FF6903F63F6]
+	(No symbol) [0x00007FF6903E67A3]
+	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
+	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
+</status>
+</kw>
+<kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-08T13:32:27.743924" elapsed="0.000115"/>
+</kw>
+<status status="PASS" start="2025-08-08T13:32:27.743671" elapsed="0.000434"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" start="2025-08-08T13:32:24.344429" elapsed="3.399815">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6904752A2+57122]
+	(No symbol) [0x00007FF6903EEA92]
+	(No symbol) [0x00007FF6902BE3AB]
+	(No symbol) [0x00007FF6902E9FF5]
+	(No symbol) [0x00007FF6902E5237]
+	(No symbol) [0x00007FF6902E2FE1]
+	(No symbol) [0x00007FF69031EA4F]
+	(No symbol) [0x00007FF69031E5B0]
+	(No symbol) [0x00007FF690316DB3]
+	(No symbol) [0x00007FF6902ED2B1]
+	(No symbol) [0x00007FF6902EE494]
+	GetHandleVerifier [0x00007FF69071EF82+2849794]
+	GetHandleVerifier [0x00007FF690771D24+3189156]
+	GetHandleVerifier [0x00007FF69076ACAF+3160367]
+	GetHandleVerifier [0x00007FF690506D06+653702]
+	(No symbol) [0x00007FF6903FA208]
+	(No symbol) [0x00007FF6903F62C4]
+	(No symbol) [0x00007FF6903F63F6]
+	(No symbol) [0x00007FF6903E67A3]
+	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
+	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
+</status>
+</test>
+<doc>Essa suite testa o site da Amazon.com.br</doc>
+<status status="FAIL" start="2025-08-08T13:32:20.360229" elapsed="7.385807"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">busca_produtos</stat>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">lista_busca</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
+</tag>
+<suite>
+<stat name="Amazon Testes" id="s1" pass="0" fail="2" skip="0">Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-08-08T13:32:21.019157" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\WINDOWS\chromedriver.exe might not be compatible with the detected chrome version (139.0.7258.67); currently, chromedriver 139.0.7258.66 is recommended for chrome 139.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-08-08T13:32:24.464784" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\WINDOWS\chromedriver.exe might not be compatible with the detected chrome version (139.0.7258.67); currently, chromedriver 139.0.7258.66 is recommended for chrome 139.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
