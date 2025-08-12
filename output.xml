@@ -1,284 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.6 on win32)" generated="2025-08-08T13:32:20.357979" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.6 on win32)" generated="2025-08-12T13:20:07.742361" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Testes" source="C:\Users\telve\OneDrive\Área de Trabalho\GABRIEL\cursoudemy\robotframework\webtesting\amazon_testes.robot">
 <test id="s1-t1" name="Caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="11">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-08T13:32:20.882603" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<msg time="2025-08-08T13:32:21.019157" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\WINDOWS\chromedriver.exe might not be compatible with the detected chrome version (139.0.7258.67); currently, chromedriver 139.0.7258.66 is recommended for chrome 139.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg time="2025-08-08T13:32:24.334593" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-08-08T13:32:24.334971" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x00007FF6904752A2+57122]
-	(No symbol) [0x00007FF6903EEA92]
-	(No symbol) [0x00007FF6902BE3AB]
-	(No symbol) [0x00007FF6902E9FF5]
-	(No symbol) [0x00007FF6902E5237]
-	(No symbol) [0x00007FF6902E2FE1]
-	(No symbol) [0x00007FF69031EA4F]
-	(No symbol) [0x00007FF69031E5B0]
-	(No symbol) [0x00007FF690316DB3]
-	(No symbol) [0x00007FF6902ED2B1]
-	(No symbol) [0x00007FF6902EE494]
-	GetHandleVerifier [0x00007FF69071EF82+2849794]
-	GetHandleVerifier [0x00007FF690771D24+3189156]
-	GetHandleVerifier [0x00007FF69076ACAF+3160367]
-	GetHandleVerifier [0x00007FF690506D06+653702]
-	(No symbol) [0x00007FF6903FA208]
-	(No symbol) [0x00007FF6903F62C4]
-	(No symbol) [0x00007FF6903F63F6]
-	(No symbol) [0x00007FF6903E67A3]
-	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
-	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
-</msg>
+<msg time="2025-08-12T13:20:08.102114" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-08-08T13:32:20.882426" elapsed="3.458156">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x00007FF6904752A2+57122]
-	(No symbol) [0x00007FF6903EEA92]
-	(No symbol) [0x00007FF6902BE3AB]
-	(No symbol) [0x00007FF6902E9FF5]
-	(No symbol) [0x00007FF6902E5237]
-	(No symbol) [0x00007FF6902E2FE1]
-	(No symbol) [0x00007FF69031EA4F]
-	(No symbol) [0x00007FF69031E5B0]
-	(No symbol) [0x00007FF690316DB3]
-	(No symbol) [0x00007FF6902ED2B1]
-	(No symbol) [0x00007FF6902EE494]
-	GetHandleVerifier [0x00007FF69071EF82+2849794]
-	GetHandleVerifier [0x00007FF690771D24+3189156]
-	GetHandleVerifier [0x00007FF69076ACAF+3160367]
-	GetHandleVerifier [0x00007FF690506D06+653702]
-	(No symbol) [0x00007FF6903FA208]
-	(No symbol) [0x00007FF6903F62C4]
-	(No symbol) [0x00007FF6903F63F6]
-	(No symbol) [0x00007FF6903E67A3]
-	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
-	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
-</status>
+<status status="PASS" start="2025-08-12T13:20:08.101922" elapsed="1.284892"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2025-08-08T13:32:24.340816" elapsed="0.000039"/>
+<status status="PASS" start="2025-08-12T13:20:09.387183" elapsed="0.033666"/>
 </kw>
-<kw name="options=add_experimental_option(&quot;detach&quot;, True)">
-<status status="NOT RUN" start="2025-08-08T13:32:24.341005" elapsed="0.000031"/>
+<status status="PASS" start="2025-08-12T13:20:08.101226" elapsed="1.319841"/>
 </kw>
-<status status="FAIL" start="2025-08-08T13:32:20.881782" elapsed="3.459394">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x00007FF6904752A2+57122]
-	(No symbol) [0x00007FF6903EEA92]
-	(No symbol) [0x00007FF6902BE3AB]
-	(No symbol) [0x00007FF6902E9FF5]
-	(No symbol) [0x00007FF6902E5237]
-	(No symbol) [0x00007FF6902E2FE1]
-	(No symbol) [0x00007FF69031EA4F]
-	(No symbol) [0x00007FF69031E5B0]
-	(No symbol) [0x00007FF690316DB3]
-	(No symbol) [0x00007FF6902ED2B1]
-	(No symbol) [0x00007FF6902EE494]
-	GetHandleVerifier [0x00007FF69071EF82+2849794]
-	GetHandleVerifier [0x00007FF690771D24+3189156]
-	GetHandleVerifier [0x00007FF69076ACAF+3160367]
-	GetHandleVerifier [0x00007FF690506D06+653702]
-	(No symbol) [0x00007FF6903FA208]
-	(No symbol) [0x00007FF6903F62C4]
-	(No symbol) [0x00007FF6903F63F6]
-	(No symbol) [0x00007FF6903E67A3]
-	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
-	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
-</status>
+<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:09.422955" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-08-12T13:20:09.422601" elapsed="1.130607"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:10.553855" level="INFO">Clicking button 'css:button[type=submit]'.</msg>
+<arg>locator=${buttoniniciar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-12T13:20:10.553437" elapsed="0.505806"/>
+</kw>
+<status status="PASS" start="2025-08-12T13:20:09.421965" elapsed="1.637430"/>
+</kw>
+<kw name="Verificar se o título da página fica &quot;Amazon.com.br | Tudo pra você, de A a Z.&quot;" owner="amazon_resources" source_name="Verificar se o título da página fica &quot;${Titulo}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-12T13:20:11.060347" elapsed="1.343137"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:12.414190" level="INFO">Page title is 'Amazon.com.br | Tudo pra você, de A a Z.'.</msg>
+<arg>title=${Titulo}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-08-12T13:20:12.403727" elapsed="0.010573"/>
+</kw>
+<status status="PASS" start="2025-08-12T13:20:11.059978" elapsed="1.354418"/>
+</kw>
+<kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:12.415192" level="INFO">Clicking element 'css:a[data-csa-c-content-id="nav_cs_electronics"]'.</msg>
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-12T13:20:12.414986" elapsed="2.645479"/>
+</kw>
+<status status="PASS" start="2025-08-12T13:20:12.414716" elapsed="2.645965"/>
+</kw>
+<kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources" source_name="Verificar se aparece a frase &quot;${Frase}&quot;">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=${Frase}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.061736" elapsed="0.033004"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${header_eletronicos}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.095050" elapsed="0.076990"/>
+</kw>
+<status status="PASS" start="2025-08-12T13:20:15.061402" elapsed="0.110816"/>
+</kw>
+<kw name="Verificar se o título da página fica &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" owner="amazon_resources" source_name="Verificar se o título da página fica &quot;${Titulo}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.172962" elapsed="0.028446"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:15.206664" level="INFO">Page title is 'Eletrônicos e Tecnologia | Amazon.com.br'.</msg>
+<arg>title=${Titulo}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.201597" elapsed="0.005173"/>
+</kw>
+<status status="PASS" start="2025-08-12T13:20:15.172684" elapsed="0.034183"/>
+</kw>
+<kw name="Verificar se aparece a categoria &quot;Computadores e Informática&quot;" owner="amazon_resources" source_name="Verificar se aparece a categoria &quot;${nameCategoria}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=(//span[text()="${nameCategoria}"])[2]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.207844" elapsed="0.032223"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:15.275954" level="INFO">Element '(//span[text()="Computadores e Informática"])[2]' is displayed.</msg>
+<arg>locator=(//span[text()="${nameCategoria}"])[2]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.240379" elapsed="0.035706"/>
+</kw>
+<status status="PASS" start="2025-08-12T13:20:15.207351" elapsed="0.068839"/>
+</kw>
+<kw name="alterar a nav" owner="amazon_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:15.277148" level="INFO">Clicking element 'xpath:(//a[contains(@class, 'a-carousel-goto-nextpage')]) [3]'.</msg>
+<arg>locator=${navega}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.276894" elapsed="0.148046"/>
+</kw>
+<status status="PASS" start="2025-08-12T13:20:15.276574" elapsed="0.148491"/>
+</kw>
+<kw name="Verificar se aparece a categoria &quot;Tablets&quot;" owner="amazon_resources" source_name="Verificar se aparece a categoria &quot;${nameCategoria}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=(//span[text()="${nameCategoria}"])[2]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.425750" elapsed="0.247475"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:15.691194" level="INFO">Element '(//span[text()="Tablets"])[2]' is displayed.</msg>
+<arg>locator=(//span[text()="${nameCategoria}"])[2]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.673413" elapsed="0.017924"/>
+</kw>
+<status status="PASS" start="2025-08-12T13:20:15.425419" elapsed="0.266106"/>
 </kw>
 <kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:16.004507" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-49.png"&gt;&lt;img src="selenium-screenshot-49.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-08-12T13:20:15.692402" elapsed="0.312242"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-08T13:32:24.342236" elapsed="0.000125"/>
+<status status="PASS" start="2025-08-12T13:20:16.004837" elapsed="2.195221"/>
 </kw>
-<status status="PASS" start="2025-08-08T13:32:24.341968" elapsed="0.000465"/>
+<status status="PASS" start="2025-08-12T13:20:15.692110" elapsed="2.508239"/>
 </kw>
 <doc>esse teste verifica o menu eletronicos do site da amazon.com.br
 e verifica a categoria Computadores e Informatica</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
-<status status="FAIL" start="2025-08-08T13:32:20.880548" elapsed="3.462062">Setup failed:
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x00007FF6904752A2+57122]
-	(No symbol) [0x00007FF6903EEA92]
-	(No symbol) [0x00007FF6902BE3AB]
-	(No symbol) [0x00007FF6902E9FF5]
-	(No symbol) [0x00007FF6902E5237]
-	(No symbol) [0x00007FF6902E2FE1]
-	(No symbol) [0x00007FF69031EA4F]
-	(No symbol) [0x00007FF69031E5B0]
-	(No symbol) [0x00007FF690316DB3]
-	(No symbol) [0x00007FF6902ED2B1]
-	(No symbol) [0x00007FF6902EE494]
-	GetHandleVerifier [0x00007FF69071EF82+2849794]
-	GetHandleVerifier [0x00007FF690771D24+3189156]
-	GetHandleVerifier [0x00007FF69076ACAF+3160367]
-	GetHandleVerifier [0x00007FF690506D06+653702]
-	(No symbol) [0x00007FF6903FA208]
-	(No symbol) [0x00007FF6903F62C4]
-	(No symbol) [0x00007FF6903F63F6]
-	(No symbol) [0x00007FF6903E67A3]
-	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
-	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
-</status>
+<status status="PASS" start="2025-08-12T13:20:08.099640" elapsed="10.100953"/>
 </test>
-<test id="s1-t2" name="Caso de teste 02 - Pesquisa de um Produto" line="21">
+<test id="s1-t2" name="Caso de teste 02 - Pesquisa de um Produto" line="25">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-08T13:32:24.345453" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<msg time="2025-08-08T13:32:24.464784" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\WINDOWS\chromedriver.exe might not be compatible with the detected chrome version (139.0.7258.67); currently, chromedriver 139.0.7258.66 is recommended for chrome 139.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg time="2025-08-08T13:32:27.738807" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-08-08T13:32:27.739091" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x00007FF6904752A2+57122]
-	(No symbol) [0x00007FF6903EEA92]
-	(No symbol) [0x00007FF6902BE3AB]
-	(No symbol) [0x00007FF6902E9FF5]
-	(No symbol) [0x00007FF6902E5237]
-	(No symbol) [0x00007FF6902E2FE1]
-	(No symbol) [0x00007FF69031EA4F]
-	(No symbol) [0x00007FF69031E5B0]
-	(No symbol) [0x00007FF690316DB3]
-	(No symbol) [0x00007FF6902ED2B1]
-	(No symbol) [0x00007FF6902EE494]
-	GetHandleVerifier [0x00007FF69071EF82+2849794]
-	GetHandleVerifier [0x00007FF690771D24+3189156]
-	GetHandleVerifier [0x00007FF69076ACAF+3160367]
-	GetHandleVerifier [0x00007FF690506D06+653702]
-	(No symbol) [0x00007FF6903FA208]
-	(No symbol) [0x00007FF6903F62C4]
-	(No symbol) [0x00007FF6903F63F6]
-	(No symbol) [0x00007FF6903E67A3]
-	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
-	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
-</msg>
+<msg time="2025-08-12T13:20:18.202224" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-08-08T13:32:24.345277" elapsed="3.397447">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x00007FF6904752A2+57122]
-	(No symbol) [0x00007FF6903EEA92]
-	(No symbol) [0x00007FF6902BE3AB]
-	(No symbol) [0x00007FF6902E9FF5]
-	(No symbol) [0x00007FF6902E5237]
-	(No symbol) [0x00007FF6902E2FE1]
-	(No symbol) [0x00007FF69031EA4F]
-	(No symbol) [0x00007FF69031E5B0]
-	(No symbol) [0x00007FF690316DB3]
-	(No symbol) [0x00007FF6902ED2B1]
-	(No symbol) [0x00007FF6902EE494]
-	GetHandleVerifier [0x00007FF69071EF82+2849794]
-	GetHandleVerifier [0x00007FF690771D24+3189156]
-	GetHandleVerifier [0x00007FF69076ACAF+3160367]
-	GetHandleVerifier [0x00007FF690506D06+653702]
-	(No symbol) [0x00007FF6903FA208]
-	(No symbol) [0x00007FF6903F62C4]
-	(No symbol) [0x00007FF6903F63F6]
-	(No symbol) [0x00007FF6903E67A3]
-	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
-	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
-</status>
+<status status="PASS" start="2025-08-12T13:20:18.202052" elapsed="1.280762"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2025-08-08T13:32:27.742957" elapsed="0.000037"/>
+<status status="PASS" start="2025-08-12T13:20:19.483086" elapsed="0.033188"/>
 </kw>
-<kw name="options=add_experimental_option(&quot;detach&quot;, True)">
-<status status="NOT RUN" start="2025-08-08T13:32:27.743120" elapsed="0.000030"/>
+<status status="PASS" start="2025-08-12T13:20:18.201777" elapsed="1.314646"/>
 </kw>
-<status status="FAIL" start="2025-08-08T13:32:24.344986" elapsed="3.398284">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x00007FF6904752A2+57122]
-	(No symbol) [0x00007FF6903EEA92]
-	(No symbol) [0x00007FF6902BE3AB]
-	(No symbol) [0x00007FF6902E9FF5]
-	(No symbol) [0x00007FF6902E5237]
-	(No symbol) [0x00007FF6902E2FE1]
-	(No symbol) [0x00007FF69031EA4F]
-	(No symbol) [0x00007FF69031E5B0]
-	(No symbol) [0x00007FF690316DB3]
-	(No symbol) [0x00007FF6902ED2B1]
-	(No symbol) [0x00007FF6902EE494]
-	GetHandleVerifier [0x00007FF69071EF82+2849794]
-	GetHandleVerifier [0x00007FF690771D24+3189156]
-	GetHandleVerifier [0x00007FF69076ACAF+3160367]
-	GetHandleVerifier [0x00007FF690506D06+653702]
-	(No symbol) [0x00007FF6903FA208]
-	(No symbol) [0x00007FF6903F62C4]
-	(No symbol) [0x00007FF6903F63F6]
-	(No symbol) [0x00007FF6903E67A3]
-	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
-	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
-</status>
+<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:19.517731" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-08-12T13:20:19.517471" elapsed="1.520303"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:21.038259" level="INFO">Clicking button 'css:button[type=submit]'.</msg>
+<msg time="2025-08-12T13:20:21.502074" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-50.png"&gt;&lt;img src="selenium-screenshot-50.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-12T13:20:21.502263" level="FAIL">Button with locator 'css:button[type=submit]' not found.</msg>
+<arg>locator=${buttoniniciar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-08-12T13:20:21.037992" elapsed="0.467528">Button with locator 'css:button[type=submit]' not found.</status>
+</kw>
+<status status="FAIL" start="2025-08-12T13:20:19.516942" elapsed="1.988749">Button with locator 'css:button[type=submit]' not found.</status>
+</kw>
+<kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa" owner="amazon_resources" source_name="Digitar o nome de produto &quot;${Produto}&quot; no campo de pesquisa">
+<status status="NOT RUN" start="2025-08-12T13:20:21.506187" elapsed="0.000059"/>
+</kw>
+<kw name="Clicar no botão de pesquisa" owner="amazon_resources">
+<status status="NOT RUN" start="2025-08-12T13:20:21.506432" elapsed="0.000028"/>
+</kw>
+<kw name="Verificar o resultado da pesquisa, se estar listando o produto pesquisado" owner="amazon_resources" source_name="Verificar o resultado da pesquisa, se estar listando o ${produto} pesquisado">
+<status status="NOT RUN" start="2025-08-12T13:20:21.506606" elapsed="0.000029"/>
 </kw>
 <kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-08-12T13:20:21.823776" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-51.png"&gt;&lt;img src="selenium-screenshot-51.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-08-12T13:20:21.507335" elapsed="0.316585"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-08T13:32:27.743924" elapsed="0.000115"/>
+<status status="PASS" start="2025-08-12T13:20:21.824130" elapsed="2.155725"/>
 </kw>
-<status status="PASS" start="2025-08-08T13:32:27.743671" elapsed="0.000434"/>
+<status status="PASS" start="2025-08-12T13:20:21.506876" elapsed="2.473202"/>
 </kw>
 <doc>Esse teste verifica a busca de um produto</doc>
 <tag>busca_produtos</tag>
 <tag>lista_busca</tag>
-<status status="FAIL" start="2025-08-08T13:32:24.344429" elapsed="3.399815">Setup failed:
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 139.0.7258.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x00007FF6904752A2+57122]
-	(No symbol) [0x00007FF6903EEA92]
-	(No symbol) [0x00007FF6902BE3AB]
-	(No symbol) [0x00007FF6902E9FF5]
-	(No symbol) [0x00007FF6902E5237]
-	(No symbol) [0x00007FF6902E2FE1]
-	(No symbol) [0x00007FF69031EA4F]
-	(No symbol) [0x00007FF69031E5B0]
-	(No symbol) [0x00007FF690316DB3]
-	(No symbol) [0x00007FF6902ED2B1]
-	(No symbol) [0x00007FF6902EE494]
-	GetHandleVerifier [0x00007FF69071EF82+2849794]
-	GetHandleVerifier [0x00007FF690771D24+3189156]
-	GetHandleVerifier [0x00007FF69076ACAF+3160367]
-	GetHandleVerifier [0x00007FF690506D06+653702]
-	(No symbol) [0x00007FF6903FA208]
-	(No symbol) [0x00007FF6903F62C4]
-	(No symbol) [0x00007FF6903F63F6]
-	(No symbol) [0x00007FF6903E67A3]
-	BaseThreadInitThunk [0x00007FFA0AD9259D+29]
-	RtlUserThreadStart [0x00007FFA0CB6AF78+40]
-</status>
+<status status="FAIL" start="2025-08-12T13:20:18.201259" elapsed="5.779273">Button with locator 'css:button[type=submit]' not found.</status>
 </test>
 <doc>Essa suite testa o site da Amazon.com.br</doc>
-<status status="FAIL" start="2025-08-08T13:32:20.360229" elapsed="7.385807"/>
+<status status="FAIL" start="2025-08-12T13:20:07.744732" elapsed="16.236883"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="0" fail="1" skip="0">busca_produtos</stat>
-<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="1" fail="0" skip="0">categorias</stat>
 <stat pass="0" fail="1" skip="0">lista_busca</stat>
-<stat pass="0" fail="1" skip="0">menus</stat>
+<stat pass="1" fail="0" skip="0">menus</stat>
 </tag>
 <suite>
-<stat name="Amazon Testes" id="s1" pass="0" fail="2" skip="0">Amazon Testes</stat>
+<stat name="Amazon Testes" id="s1" pass="1" fail="1" skip="0">Amazon Testes</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-08-08T13:32:21.019157" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\WINDOWS\chromedriver.exe might not be compatible with the detected chrome version (139.0.7258.67); currently, chromedriver 139.0.7258.66 is recommended for chrome 139.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg time="2025-08-08T13:32:24.464784" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\WINDOWS\chromedriver.exe might not be compatible with the detected chrome version (139.0.7258.67); currently, chromedriver 139.0.7258.66 is recommended for chrome 139.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
