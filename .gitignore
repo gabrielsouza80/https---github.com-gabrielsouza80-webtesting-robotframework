@@ -1,1 +1,3 @@
 results/selenium-screenshot-*.png
+/results/*
+
