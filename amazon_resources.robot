@@ -20,7 +20,14 @@ Fechar o navegador
     Close Browser
 Acessar a home page do site Amazon.com.br
     Go To    url=${URL}
-    Click Button    locator=${buttoniniciar}
+    ${status}    ${msg}    Run Keyword And Ignore Error    Element Should Be Visible    ${BUTTON_INICIAR}    3s
+    IF    '${status}' == 'PASS'
+        Click Button    ${BUTTON_INICIAR}
+        Log To Console    Botão clicado
+    ELSE
+        Log To Console    Botão não visível, seguindo fluxo
+        Log To Console    ${msg}
+    END
 Entrar no menu "Eletrônicos"
     Click Element    locator=${MENU_ELETRONICOS}
 Verificar se aparece a frase "${Frase}"
