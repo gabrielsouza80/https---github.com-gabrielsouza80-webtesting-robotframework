@@ -1,3 +1,6 @@
-results/selenium-screenshot-*.png
-/results/*
+/results/
+*.png
+*.html
+*.xml
+
 
