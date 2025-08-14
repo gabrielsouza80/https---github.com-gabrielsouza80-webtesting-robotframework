@@ -9,6 +9,9 @@ ${navega}                      xpath:(//a[contains(@class, 'a-carousel-goto-next
 ${buttoniniciar}               css:button[type=submit]
 ${inputSearch}                 xpath://*[@id='twotabsearchtextbox']
 ${seachbutton}                 id:nav-search-submit-button
+${produtoAmazon}               xpath:(//h2[contains (@aria-label, "Console Xbox Series S")])[1]
+${AddCart}                     css:input[id="add-to-cart-button"]
+
 
 *** Keywords **
 Abrir o navegador
@@ -56,11 +59,27 @@ Digitar o nome de produto "${Produto}" no campo de pesquisa
 Clicar no botão de pesquisa
     Click Button    locator=${seachbutton}
     
-Verificar o resultado da pesquisa, se estar listando o ${produto} pesquisado
+Verificar o resultado da pesquisa, se estar listando o "${produto}" pesquisado
     Wait Until Page Contains   text=${produto}
 
 Adicionar o produto "Console Xbox Series S" no carrinho
-
+    Click Element    locator=${produtoAmazon}
+    Wait Until Element Is Visible    locator=${AddCart}
+    Click Element    locator=${AddCart}
+    Sleep    10   
+    # devido a animaçao
+    ${status}    ${msg}    Run Keyword And Ignore Error    Element Should Be Visible    locator=css:input[aria-labelledby="attachSiNoCoverage-announce"]
+    IF    "${status}" == "PASS"
+    Click Element      locator=css:input[aria-labelledby="attachSiNoCoverage-announce"]
+    Log To Console    Botão clicado
+    ELSE
+    Log To Console    Botão não visível, seguindo fluxo
+    Log To Console    ${msg}
+    END
+Verificar se o produto ${produto} foi adicionado com sucesso
+    Wait Until Element Is Visible    locator=css:input[aria-labelledby*="cart-button"]    timeout=15s
+    Click Element    locator=css:input[aria-labelledby*="cart-button"]
+    Wait Until Page Contains   text=${produto}
 
 
 #### gherkin BDD  ####
