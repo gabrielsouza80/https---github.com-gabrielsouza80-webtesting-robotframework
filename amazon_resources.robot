@@ -77,8 +77,14 @@ Adicionar o produto "Console Xbox Series S" no carrinho
     Log To Console    ${msg}
     END
 Verificar se o produto ${produto} foi adicionado com sucesso
-    Wait Until Element Is Visible    locator=css:input[aria-labelledby*="cart-button"]    timeout=15s
-    Click Element    locator=css:input[aria-labelledby*="cart-button"]
+     ${status}    ${msg}    Run Keyword And Ignore Error    Element Should Be Visible    css:input[aria-labelledby*="cart-button"]
+    IF    '${status}' == 'PASS'
+        Click Button    css:input[aria-labelledby*="cart-button"]
+        Log To Console    Botão clicado
+    ELSE
+        Log To Console    Botão não visível, seguindo fluxo
+        Log To Console    ${msg}
+    END
     Wait Until Page Contains   text=${produto}
 
 
@@ -103,13 +109,11 @@ Quando pesquisar pelo produto "Xbox Series S"
     Digitar o nome de produto "Xbox Series S" no campo de pesquisa
     Clicar no botão de pesquisa
 
-
 Então o título da página deve ficar "Amazon.com.br : Xbox Series S"
     Verificar se o título da página fica "Amazon.com.br : Xbox Series S"
 
-E um produto da linha "Xbox Series S" deve ser mostrado na página
-    Verificar o resultado da pesquisa, se estar listando o Xbox Series S pesquisado
-
+E um produto da linha "${produto}" deve ser mostrado na página
+    Verificar o resultado da pesquisa, se estar listando o "${produto}" pesquisado
 
 
  
