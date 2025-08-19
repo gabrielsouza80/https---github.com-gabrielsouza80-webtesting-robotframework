@@ -11,6 +11,7 @@ ${inputSearch}                 xpath://*[@id='twotabsearchtextbox']
 ${seachbutton}                 id:nav-search-submit-button
 ${produtoAmazon}               xpath:(//h2[contains (@aria-label, "Console Xbox Series S")])[1]
 ${AddCart}                     css:input[id="add-to-cart-button"]
+${timeout}                     10s
 
 
 *** Keywords **
@@ -49,11 +50,11 @@ alterar a nav
     Click Element    locator=${navega}
 
 Verificar se aparece a categoria "${nameCategoria}"
-    Wait Until Element Is Visible    locator=(//span[text()="${nameCategoria}"])[2]    timeout=10s
+    Wait Until Element Is Visible    locator=(//span[text()="${nameCategoria}"])[2]    timeout=${timeout}
     Element Should Be Visible    locator=(//span[text()="${nameCategoria}"])[2]
 
 Digitar o nome de produto "${Produto}" no campo de pesquisa
-    Wait Until Element Is Visible    locator=${inputSearch}
+    Wait Until Element Is Visible    locator=${inputSearch}    timeout=${timeout}
     Input Text    locator=${inputSearch}    text=${Produto}    clear=${True}
 
 Clicar no botão de pesquisa
@@ -79,14 +80,24 @@ Adicionar o produto "Console Xbox Series S" no carrinho
 Verificar se o produto ${produto} foi adicionado com sucesso
      ${status}    ${msg}    Run Keyword And Ignore Error    Element Should Be Visible    css:input[aria-labelledby*="cart-button"]
     IF    '${status}' == 'PASS'
+        Wait Until Element Is Visible    locator=input[aria-labelledby*="cart-button"]    timeout=${timeout}
         Click Button    css:input[aria-labelledby*="cart-button"]
         Log To Console    Botão clicado
     ELSE
         Log To Console    Botão não visível, seguindo fluxo
         Log To Console    ${msg}
+        Wait Until Element Is Visible    locator=css:#nav-cart    timeout=${timeout}
+        Click Element    locator=css:#nav-cart
     END
     Wait Until Page Contains   text=${produto}
 
+Remover o produto "${produto}" do carrinho 
+    ${elements} =    Get WebElements    css:input[data-action="delete-active"]
+    FOR    ${item}    IN    ${elements}
+        Log To Console   ${item}
+        Log To Console   ${elements}
+        Click Element    ${item}    
+    END
 
 #### gherkin BDD  ####
 Dado que estou na home page da Amazon.com.br

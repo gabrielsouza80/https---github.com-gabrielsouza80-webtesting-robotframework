@@ -11,7 +11,7 @@ Test Teardown    Fechar o navegador
 Caso de teste 01 - Acesso ao menu "Eletrônicos"
     [Documentation]    esse teste verifica o menu eletronicos do site da amazon.com.br
     ...                e verifica a categoria Computadores e Informatica
-    [Tags]             menus  categorias
+    [Tags]             menus  categorias    regressao
     Acessar a home page do site Amazon.com.br
     Verificar se o título da página fica "Amazon.com.br | Tudo pra você, de A a Z."
     Entrar no menu "Eletrônicos"
@@ -23,15 +23,15 @@ Caso de teste 01 - Acesso ao menu "Eletrônicos"
 
 Caso de teste 02 - Pesquisa de um Produto
     [Documentation]    Esse teste verifica a busca de um produto
-    [Tags]             busca_produtos  lista_busca
+    [Tags]             busca_produtos  lista_busca    regressao
     Acessar a home page do site Amazon.com.br
     Digitar o nome de produto "Xbox Series S" no campo de pesquisa
     Clicar no botão de pesquisa
-    Verificar o resultado da pesquisa, se estar listando o Xbox Series S pesquisado
+    Verificar o resultado da pesquisa, se estar listando o "Xbox Series S" pesquisado
 
 Caso de Teste 03 - Adicionar Produto no Carrinho
     [Documentation]    Esse teste verifica a adição de um produto no carrinho de compras
-    [Tags]             adicionar_carrinho
+    [Tags]             adicionar_carrinho    regressao
     Acessar a home page do site Amazon.com.br
     Digitar o nome de produto "Xbox Series S" no campo de pesquisa
     Clicar no botão de pesquisa
@@ -45,7 +45,7 @@ Caso de Teste 04 - Remover Produto do Carrinho
     Acessar a home page do site Amazon.com.br
     Digitar o nome de produto "Xbox Series S" no campo de pesquisa
     Clicar no botão de pesquisa
-    Verificar o resultado da pesquisa se está listando o produto "Console Xbox Series S"
+    Verificar o resultado da pesquisa, se estar listando o "Console Xbox Series S" pesquisado
     Adicionar o produto "Console Xbox Series S" no carrinho
     Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
     Remover o produto "Console Xbox Series S" do carrinho
