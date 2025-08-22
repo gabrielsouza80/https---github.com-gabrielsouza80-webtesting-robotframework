@@ -1,229 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.6 on win32)" generated="2025-08-14T14:59:36.798655" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.6 on win32)" generated="2025-08-19T11:03:15.839997" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Testes" source="C:\Users\telve\OneDrive\Área de Trabalho\GABRIEL\cursoudemy\robotframework\webtesting\amazon_testes.robot">
-<test id="s1-t1" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="32">
+<test id="s1-t1" name="Caso de Teste 04 - Remover Produto do Carrinho" line="42">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:37.245707" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-08-19T11:03:16.319768" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-14T14:59:37.245433" elapsed="1.273335"/>
+<status status="PASS" start="2025-08-19T11:03:16.319577" elapsed="1.269167"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-08-14T14:59:38.519207" elapsed="0.035296"/>
+<status status="PASS" start="2025-08-19T11:03:17.589127" elapsed="0.038291"/>
 </kw>
-<status status="PASS" start="2025-08-14T14:59:37.244730" elapsed="1.310044"/>
+<status status="PASS" start="2025-08-19T11:03:16.318931" elapsed="1.308654"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:38.557047" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
+<msg time="2025-08-19T11:03:17.628766" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-08-14T14:59:38.556689" elapsed="0.922157"/>
+<status status="PASS" start="2025-08-19T11:03:17.628599" elapsed="1.063434"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:39.504577" level="INFO">Element 'css:button[type=submit]' is displayed.</msg>
+<msg time="2025-08-19T11:03:18.713759" level="INFO">Element 'css:button[type=submit]' is displayed.</msg>
 <arg>${BUTTON_INICIAR}</arg>
 <arg>3s</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-14T14:59:39.479724" elapsed="0.024945"/>
+<status status="PASS" start="2025-08-19T11:03:18.692508" elapsed="0.021345"/>
 </kw>
-<msg time="2025-08-14T14:59:39.504821" level="INFO">${status} = PASS</msg>
-<msg time="2025-08-14T14:59:39.504864" level="INFO">${msg} = None</msg>
+<msg time="2025-08-19T11:03:18.714006" level="INFO">${status} = PASS</msg>
+<msg time="2025-08-19T11:03:18.714048" level="INFO">${msg} = None</msg>
 <var>${status}</var>
 <var>${msg}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${BUTTON_INICIAR}</arg>
 <arg>3s</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-08-14T14:59:39.479217" elapsed="0.025669"/>
+<status status="PASS" start="2025-08-19T11:03:18.692284" elapsed="0.021786"/>
 </kw>
 <if>
 <branch type="IF" condition="'${status}' == 'PASS'">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:39.505425" level="INFO">Clicking button 'css:button[type=submit]'.</msg>
+<msg time="2025-08-19T11:03:18.714619" level="INFO">Clicking button 'css:button[type=submit]'.</msg>
 <arg>${BUTTON_INICIAR}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-14T14:59:39.505241" elapsed="0.079905"/>
+<status status="PASS" start="2025-08-19T11:03:18.714433" elapsed="2.178680"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Botão clicado</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-14T14:59:39.585340" elapsed="0.000297"/>
+<status status="PASS" start="2025-08-19T11:03:20.893494" elapsed="0.000477"/>
 </kw>
-<status status="PASS" start="2025-08-14T14:59:39.505006" elapsed="0.080675"/>
+<status status="PASS" start="2025-08-19T11:03:18.714185" elapsed="2.179859"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Botão não visível, seguindo fluxo</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-08-14T14:59:39.585841" elapsed="0.000023"/>
+<status status="NOT RUN" start="2025-08-19T11:03:20.894452" elapsed="0.000098"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${msg}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-08-14T14:59:39.585950" elapsed="0.000022"/>
+<status status="NOT RUN" start="2025-08-19T11:03:20.894850" elapsed="0.000070"/>
 </kw>
-<status status="NOT RUN" start="2025-08-14T14:59:39.585731" elapsed="0.000273"/>
+<status status="NOT RUN" start="2025-08-19T11:03:20.894113" elapsed="0.000888"/>
 </branch>
-<status status="PASS" start="2025-08-14T14:59:39.504974" elapsed="0.081060"/>
+<status status="PASS" start="2025-08-19T11:03:18.714152" elapsed="2.180928"/>
 </if>
-<status status="PASS" start="2025-08-14T14:59:38.556040" elapsed="1.030052"/>
+<status status="PASS" start="2025-08-19T11:03:17.628214" elapsed="3.266975"/>
 </kw>
 <kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa" owner="amazon_resources" source_name="Digitar o nome de produto &quot;${Produto}&quot; no campo de pesquisa">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${inputSearch}</arg>
+<arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-14T14:59:39.586814" elapsed="1.410479"/>
+<status status="PASS" start="2025-08-19T11:03:20.895854" elapsed="0.056100"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:40.997882" level="INFO">Typing text 'Xbox Series S' into text field 'xpath://*[@id='twotabsearchtextbox']'.</msg>
+<msg time="2025-08-19T11:03:20.953240" level="INFO">Typing text 'Xbox Series S' into text field 'xpath://*[@id='twotabsearchtextbox']'.</msg>
 <arg>locator=${inputSearch}</arg>
 <arg>text=${Produto}</arg>
 <arg>clear=${True}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-14T14:59:40.997485" elapsed="0.222277"/>
+<status status="PASS" start="2025-08-19T11:03:20.952464" elapsed="0.203436"/>
 </kw>
-<status status="PASS" start="2025-08-14T14:59:39.586517" elapsed="1.633470"/>
+<status status="PASS" start="2025-08-19T11:03:20.895567" elapsed="0.260573"/>
 </kw>
 <kw name="Clicar no botão de pesquisa" owner="amazon_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:41.221607" level="INFO">Clicking button 'id:nav-search-submit-button'.</msg>
+<msg time="2025-08-19T11:03:21.157345" level="INFO">Clicking button 'id:nav-search-submit-button'.</msg>
 <arg>locator=${seachbutton}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-14T14:59:41.221248" elapsed="2.000100"/>
+<status status="PASS" start="2025-08-19T11:03:21.157036" elapsed="1.951176"/>
 </kw>
-<status status="PASS" start="2025-08-14T14:59:41.220758" elapsed="2.000815"/>
+<status status="PASS" start="2025-08-19T11:03:21.156699" elapsed="1.951748"/>
 </kw>
 <kw name="Verificar o resultado da pesquisa, se estar listando o &quot;Console Xbox Series S&quot; pesquisado" owner="amazon_resources" source_name="Verificar o resultado da pesquisa, se estar listando o &quot;${produto}&quot; pesquisado">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>text=${produto}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-08-14T14:59:43.222532" elapsed="0.019737"/>
+<status status="PASS" start="2025-08-19T11:03:23.109163" elapsed="0.018489"/>
 </kw>
-<status status="PASS" start="2025-08-14T14:59:43.222134" elapsed="0.020315"/>
+<status status="PASS" start="2025-08-19T11:03:23.108878" elapsed="0.018879"/>
 </kw>
 <kw name="Adicionar o produto &quot;Console Xbox Series S&quot; no carrinho" owner="amazon_resources">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:43.243277" level="INFO">Clicking element 'xpath:(//h2[contains (@aria-label, "Console Xbox Series S")])[1]'.</msg>
+<msg time="2025-08-19T11:03:23.128773" level="INFO">Clicking element 'xpath:(//h2[contains (@aria-label, "Console Xbox Series S")])[1]'.</msg>
 <arg>locator=${produtoAmazon}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-14T14:59:43.243090" elapsed="3.078530"/>
+<status status="PASS" start="2025-08-19T11:03:23.128584" elapsed="3.051772"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${AddCart}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-14T14:59:46.321848" elapsed="0.026951"/>
+<status status="PASS" start="2025-08-19T11:03:26.180667" elapsed="0.054193"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:46.349613" level="INFO">Clicking element 'css:input[id="add-to-cart-button"]'.</msg>
+<msg time="2025-08-19T11:03:26.235314" level="INFO">Clicking element 'css:input[id="add-to-cart-button"]'.</msg>
 <arg>locator=${AddCart}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-14T14:59:46.349150" elapsed="0.316999"/>
+<status status="PASS" start="2025-08-19T11:03:26.235072" elapsed="0.138882"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-14T14:59:56.666794" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-08-19T11:03:36.374762" level="INFO">Slept 10 seconds.</msg>
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-14T14:59:46.666348" elapsed="10.000709"/>
+<status status="PASS" start="2025-08-19T11:03:26.374187" elapsed="10.000720"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:56.698031" level="INFO">Element 'css:input[aria-labelledby="attachSiNoCoverage-announce"]' is displayed.</msg>
+<msg time="2025-08-19T11:03:36.397806" level="INFO">Element 'css:input[aria-labelledby="attachSiNoCoverage-announce"]' is displayed.</msg>
 <arg>locator=css:input[aria-labelledby="attachSiNoCoverage-announce"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-14T14:59:56.667666" elapsed="0.030584"/>
+<status status="PASS" start="2025-08-19T11:03:36.375394" elapsed="0.022558"/>
 </kw>
-<msg time="2025-08-14T14:59:56.698510" level="INFO">${status} = PASS</msg>
-<msg time="2025-08-14T14:59:56.698593" level="INFO">${msg} = None</msg>
+<msg time="2025-08-19T11:03:36.398190" level="INFO">${status} = PASS</msg>
+<msg time="2025-08-19T11:03:36.398273" level="INFO">${msg} = None</msg>
 <var>${status}</var>
 <var>${msg}</var>
 <arg>Element Should Be Visible</arg>
 <arg>locator=css:input[aria-labelledby="attachSiNoCoverage-announce"]</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-08-14T14:59:56.667416" elapsed="0.031224"/>
+<status status="PASS" start="2025-08-19T11:03:36.375156" elapsed="0.023163"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;${status}&quot; == &quot;PASS&quot;">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-14T14:59:56.699523" level="INFO">Clicking element 'css:input[aria-labelledby="attachSiNoCoverage-announce"]'.</msg>
+<msg time="2025-08-19T11:03:36.399300" level="INFO">Clicking element 'css:input[aria-labelledby="attachSiNoCoverage-announce"]'.</msg>
 <arg>locator=css:input[aria-labelledby="attachSiNoCoverage-announce"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-14T14:59:56.699356" elapsed="0.118872"/>
+<status status="PASS" start="2025-08-19T11:03:36.399117" elapsed="0.139183"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Botão clicado</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-14T14:59:56.818501" elapsed="0.000513"/>
+<status status="PASS" start="2025-08-19T11:03:36.538507" elapsed="0.000327"/>
 </kw>
-<status status="PASS" start="2025-08-14T14:59:56.698833" elapsed="0.120293"/>
+<status status="PASS" start="2025-08-19T11:03:36.398789" elapsed="0.140125"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Botão não visível, seguindo fluxo</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-08-14T14:59:56.819467" elapsed="0.000037"/>
+<status status="NOT RUN" start="2025-08-19T11:03:36.539240" elapsed="0.000037"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${msg}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-08-14T14:59:56.819602" elapsed="0.000022"/>
+<status status="NOT RUN" start="2025-08-19T11:03:36.539378" elapsed="0.000022"/>
 </kw>
-<status status="NOT RUN" start="2025-08-14T14:59:56.819214" elapsed="0.000447"/>
+<status status="NOT RUN" start="2025-08-19T11:03:36.538979" elapsed="0.000454"/>
 </branch>
-<status status="PASS" start="2025-08-14T14:59:56.698787" elapsed="0.120906"/>
+<status status="PASS" start="2025-08-19T11:03:36.398710" elapsed="0.140758"/>
 </if>
-<status status="PASS" start="2025-08-14T14:59:43.242845" elapsed="13.576940"/>
+<status status="PASS" start="2025-08-19T11:03:23.128293" elapsed="13.411257"/>
 </kw>
 <kw name="Verificar se o produto &quot;Console Xbox Series S&quot; foi adicionado com sucesso" owner="amazon_resources" source_name="Verificar se o produto ${produto} foi adicionado com sucesso">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-08-19T11:03:36.957168" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-119.png"&gt;&lt;img src="selenium-screenshot-119.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-19T11:03:36.957378" level="FAIL">The element 'css:input[aria-labelledby*="cart-button"]' should be visible, but it is not.</msg>
+<arg>css:input[aria-labelledby*="cart-button"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-08-19T11:03:36.541035" elapsed="0.418469">The element 'css:input[aria-labelledby*="cart-button"]' should be visible, but it is not.</status>
+</kw>
+<msg time="2025-08-19T11:03:36.959666" level="INFO">${status} = FAIL</msg>
+<msg time="2025-08-19T11:03:36.959707" level="INFO">${msg} = The element 'css:input[aria-labelledby*="cart-button"]' should be visible, but it is not.</msg>
+<var>${status}</var>
+<var>${msg}</var>
+<arg>Element Should Be Visible</arg>
+<arg>css:input[aria-labelledby*="cart-button"]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-08-19T11:03:36.540518" elapsed="0.419212"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}' == 'PASS'">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-08-14T15:00:12.213915" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-70.png"&gt;&lt;img src="selenium-screenshot-70.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-08-14T15:00:12.214135" level="FAIL">Element 'css:input[aria-labelledby*="cart-button"]' not visible after 15 seconds.</msg>
-<arg>locator=css:input[aria-labelledby*="cart-button"]</arg>
-<arg>timeout=15s</arg>
+<arg>locator=input[aria-labelledby*="cart-button"]</arg>
+<arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-08-14T14:59:56.820575" elapsed="15.395696">Element 'css:input[aria-labelledby*="cart-button"]' not visible after 15 seconds.</status>
+<status status="NOT RUN" start="2025-08-19T11:03:36.960054" elapsed="0.000026"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css:input[aria-labelledby*="cart-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-19T11:03:36.960180" elapsed="0.000023"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Botão clicado</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-08-19T11:03:36.960298" elapsed="0.000023"/>
+</kw>
+<status status="NOT RUN" start="2025-08-19T11:03:36.959828" elapsed="0.000526"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Botão não visível, seguindo fluxo</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-19T11:03:36.960469" elapsed="0.000321"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${msg}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-19T11:03:36.961151" elapsed="0.000469"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=css:#nav-cart</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-19T11:03:36.961809" elapsed="0.030120"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>locator=css:input[aria-labelledby*="cart-button"]</arg>
+<msg time="2025-08-19T11:03:36.992297" level="INFO">Clicking element 'css:#nav-cart'.</msg>
+<arg>locator=css:#nav-cart</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-08-14T15:00:12.216487" elapsed="0.000032"/>
+<status status="PASS" start="2025-08-19T11:03:36.992123" elapsed="0.889741"/>
 </kw>
+<status status="PASS" start="2025-08-19T11:03:36.960387" elapsed="0.921639"/>
+</branch>
+<status status="PASS" start="2025-08-19T11:03:36.959801" elapsed="0.922284"/>
+</if>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-08-19T11:03:43.310067" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-120.png"&gt;&lt;img src="selenium-screenshot-120.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-19T11:03:43.310225" level="FAIL">Text '"Console Xbox Series S"' did not appear in 5 seconds.</msg>
 <arg>text=${produto}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2025-08-14T15:00:12.216616" elapsed="0.000022"/>
+<status status="FAIL" start="2025-08-19T11:03:37.882360" elapsed="5.429270">Text '"Console Xbox Series S"' did not appear in 5 seconds.</status>
 </kw>
-<status status="FAIL" start="2025-08-14T14:59:56.820201" elapsed="15.396545">Element 'css:input[aria-labelledby*="cart-button"]' not visible after 15 seconds.</status>
+<status status="FAIL" start="2025-08-19T11:03:36.540046" elapsed="6.771751">Text '"Console Xbox Series S"' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Remover o produto &quot;Console Xbox Series S&quot; do carrinho" owner="amazon_resources" source_name="Remover o produto &quot;${produto}&quot; do carrinho">
+<status status="NOT RUN" start="2025-08-19T11:03:43.312285" elapsed="0.000084"/>
+</kw>
+<kw name="Verificar se o carrinho fica vazio">
+<status status="NOT RUN" start="2025-08-19T11:03:43.312777" elapsed="0.000060"/>
 </kw>
 <kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-08-14T15:00:12.476936" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-71.png"&gt;&lt;img src="selenium-screenshot-71.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-19T11:03:43.587248" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-121.png"&gt;&lt;img src="selenium-screenshot-121.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-08-14T15:00:12.217538" elapsed="0.259553"/>
+<status status="PASS" start="2025-08-19T11:03:43.313483" elapsed="0.273915"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-14T15:00:12.477288" elapsed="2.284071"/>
+<status status="PASS" start="2025-08-19T11:03:43.587638" elapsed="2.331440"/>
 </kw>
-<status status="PASS" start="2025-08-14T15:00:12.217175" elapsed="2.544402"/>
+<status status="PASS" start="2025-08-19T11:03:43.313239" elapsed="2.605969"/>
 </kw>
-<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
-<tag>adicionar_carrinho</tag>
-<status status="FAIL" start="2025-08-14T14:59:37.243772" elapsed="37.518381">Element 'css:input[aria-labelledby*="cart-button"]' not visible after 15 seconds.</status>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" start="2025-08-19T11:03:16.318147" elapsed="29.601291">Text '"Console Xbox Series S"' did not appear in 5 seconds.</status>
 </test>
 <doc>Essa suite testa o site da Amazon.com.br</doc>
-<status status="FAIL" start="2025-08-14T14:59:36.800759" elapsed="37.963100"/>
+<status status="FAIL" start="2025-08-19T11:03:15.841759" elapsed="30.078711"/>
 </suite>
 <statistics>
 <total>
 <stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">adicionar_carrinho</stat>
+<stat pass="0" fail="1" skip="0">remover_carrinho</stat>
 </tag>
 <suite>
 <stat name="Amazon Testes" id="s1" pass="0" fail="1" skip="0">Amazon Testes</stat>
