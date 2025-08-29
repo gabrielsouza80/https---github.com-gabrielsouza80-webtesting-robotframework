@@ -60,7 +60,7 @@ Digitar o nome de produto "${Produto}" no campo de pesquisa
 Clicar no botão de pesquisa
     Click Button    locator=${seachbutton}
     
-Verificar o resultado da pesquisa, se estar listando o "${produto}" pesquisado
+Verificar o resultado da pesquisa, se estar listando o "${produto}" pesquisado    
     Wait Until Page Contains   text=${produto}
 
 Adicionar o produto "Console Xbox Series S" no carrinho
@@ -77,7 +77,8 @@ Adicionar o produto "Console Xbox Series S" no carrinho
     Log To Console    Botão não visível, seguindo fluxo
     Log To Console    ${msg}
     END
-Verificar se o produto ${produto} foi adicionado com sucesso
+    Sleep    10s
+Verificar se o produto "${produto}" foi adicionado com sucesso
      ${status}    ${msg}    Run Keyword And Ignore Error    Element Should Be Visible    css:input[aria-labelledby*="cart-button"]
     IF    '${status}' == 'PASS'
         Wait Until Element Is Visible    locator=input[aria-labelledby*="cart-button"]    timeout=${timeout}
